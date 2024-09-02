@@ -1,0 +1,86 @@
+.contact {
+  /* height: 0vh; */
+  margin-bottom: 30px;
+  padding: 0 20px;
+}
+
+.contact h2 {
+  margin: 50px 0;
+}
+
+.about-heading {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px;
+  text-align: center;
+}
+
+
+
+.contact-column p {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.contact-column a, .contact-column span {
+  font-size: 1.3rem;
+  background: linear-gradient(267deg, #DA7C25 .36%, #B923E1 102.06%);
+  color: transparent;
+  background-clip: text;
+  text-decoration: none;
+  display: block;
+  margin-top: 8px;
+}
+
+.contact-column a:hover {
+  text-decoration: underline;
+}
+
+.contact-column:hover {
+  transform: scale(1.05);
+  transition: transform 0.4s;
+  
+}
+
+@media (max-width: 768px) {
+  .contact {
+    margin-top: 60px;
+    height: 123vh;
+  }
+  .contact-info {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .contact h2 {
+    margin: 50px 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+  .contact-column {
+    max-width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    /* height: 180px; Decreased height for smaller screens */
+  }
+
+  .contact-column p {
+    font-size: 1.2rem;
+  }
+
+  .contact-column a, .contact-column span {
+    font-size: 1rem;
+  }
+}
+

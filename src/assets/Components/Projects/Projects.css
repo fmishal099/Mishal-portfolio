@@ -1,0 +1,34 @@
+.projects h2{
+    padding-top: 80px;
+}
+.img{
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;   
+  
+}
+img {
+    width:350px;
+
+    height: auto;
+}
+img:hover{
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+@media (max-width:768px) {
+    .img{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+        gap: 20px; /* Adds space between cards */
+        margin-top: 40px; 
+      
+    }
+    
+}
