@@ -24,7 +24,6 @@
 .Services {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
     gap: 20px; /* Adds space between cards */
     margin-top: 40px;
 }
@@ -45,7 +44,7 @@
         margin: auto;
         align-items: center;
         justify-content: space-between;
-        flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+        flex-wrap: wrap !important; 
         gap: 20px; /* Adds space between cards */
         margin-top: 40px;
     }
