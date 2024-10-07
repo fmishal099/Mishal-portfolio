@@ -90,6 +90,7 @@ b {
     .about {
         flex-direction: column;
         text-align: center;
+        justify-content: center;
     }
     .about {
         display: flex;
@@ -106,6 +107,8 @@ b {
     .about-heading {
         /* margin-top: 90px;; */
         font-size: 35px;
+        display: flex;
+        justify-content: center;
     }
 
     .about-content p {

@@ -1,70 +1,83 @@
-.projects h2{
-    padding-top: 50px;
-}
-.img{
-    display: grid;
-    grid-template-columns: 1fr 1fr 3fr;
-    gap: 40px;
-    justify-content: center;
-    align-items: center;   
-  
-}
-.project-heading{
-margin-bottom: 40px;
-}
-img {
-    width:350px;
-
-    height: auto;
-}
-img:hover{
-    transform: scale(1.05);
-    transition: 0.4s;
-}
-
-
+/* General Reset */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.projects h2 {
+  padding-top: 50px;
+}
+
+.img {
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-heading {
+  margin-bottom: 40px;
+}
+
+img {
+  width: 350px;
+  height: auto;
+}
+
+img:hover {
+  transform: scale(1.05);
+  transition: 0.4s;
+}
+
+/* Gallery */
+.gallery-column {
+  float: left;
+  width: 33%;
+  padding: 15px;
+}
+
+.gallery-column img {
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.gallery-row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .img {
+      grid-template-columns: 1fr 1fr;
+      gap: 20px; /* Reduce the gap for smaller screens */
   }
-  
+
   .gallery-column {
-    float: left;
-    width: 33%;
-    padding: 15px;
-
-    
+      width: 50%; /* Two images per row for smaller screens */
   }
-  .gallery-column img {
-    /* border:3px solid;  */
-    /* border-image: linear-gradient(267deg, #DA7C25 .36%, #B923E1 102.06%) 1;  */
-    border-radius: 25px; 
-    padding: 10px;
+
+  img {
+      width: 100%; /* Make images responsive to the column width */
   }
-  
-  
-  
-  .gallery-row::after {
-    content: "";
-    clear: both;
-    display: table;
- 
+}
+
+@media (max-width: 480px) {
+  .img {
+      grid-template-columns: 1fr;
+      gap: 10px; /* Reduce the gap further for very small screens */
   }
-  
 
+  .gallery-column {
+      width: 100%; /* One image per row for mobile screens */
+  }
 
+  img {
+      width: 100%; /* Full width images on small screens */
+  }
 
-
-@media (max-width:768px) {
-    .img{
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
-        gap: 20px; /* Adds space between cards */
-        margin-top: 40px; 
-      
-    }
-    
+  .projects h2 {
+      padding-top: 20px; /* Reduce top padding on smaller screens */
+  }
 }

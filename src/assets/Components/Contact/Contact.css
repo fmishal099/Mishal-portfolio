@@ -1,27 +1,37 @@
+/* Base styles */
 .contact {
-  /* height: 0vh; */
   margin-bottom: 30px;
   padding: 0 20px;
+  height: auto; /* Automatically adjusts based on content */
+    overflow: visible;
 }
 
 .contact h2 {
   margin: 50px 0;
 }
 
-.about-heading {
+.services-heading {
   font-size: 2rem;
   text-align: center;
 }
 
+/* Flexbox for the contact info */
 .contact-info {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 80px;
+  justify-content: center; /* Ensure even spacing on smaller screens */
   text-align: center;
+  gap: 40px;
+  align-items: flex-start; /* Align items to prevent cutting off content */
 }
 
-
+/* Each column styling */
+.contact-column {
+  flex: 1 1 calc(20% - 40px); /* 5 columns on desktop */
+  min-width: 150px;
+  margin-bottom: 20px;
+  transition: transform 0.4s;
+}
 
 .contact-column p {
   margin: 0;
@@ -45,42 +55,48 @@
 
 .contact-column:hover {
   transform: scale(1.05);
-  transition: transform 0.4s;
-  
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 1200px) {
+  .contact-column {
+    flex: 1 1 calc(33.33% - 40px); /* 3 columns on medium screens */
+  }
 }
 
 @media (max-width: 768px) {
-  .contact {
-    margin-top: 60px;
-    height: 123vh;
+  .contact-column {
+    flex: 1 1 calc(50% - 40px); /* 2 columns on smaller screens */
   }
-  .contact-info {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .contact h2 {
-    margin: 50px 0;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    margin-bottom: 30px;
-    font-size: 32px;
+  .contact{
+    height:900px !important; /* Automatically adjusts based on content */
+     overflow: visible;
+   }
 }
+
+@media (max-width: 480px) {
+  .contact-column {
+    flex: 1 1 100%; /* 1 column on mobile */
+  }
+.contact{
+ height:850px !important; /* Automatically adjusts based on content */
+  overflow: visible;
+}
+  .services-heading {
+    font-size: 1.5rem;
+  }
+
+  .contact-info {
+    gap: 20px; /* Reduce gap on smaller screens */
+    padding: 10px; /* Ensure padding prevents content from being cut off */
+  }
 
   .contact-column {
-    max-width: 100%;
-    padding: 15px;
-    font-size: 1rem;
-    /* height: 180px; Decreased height for smaller screens */
+    margin-bottom: 20px;
   }
 
-  .contact-column p {
-    font-size: 1.2rem;
-  }
-
-  .contact-column a, .contact-column span {
-    font-size: 1rem;
+  /* Ensure the container allows scrolling if content exceeds screen height */
+  .contact {
+    padding-bottom: 40px; /* Ensure content isn't cut off at the bottom */
   }
 }
-
