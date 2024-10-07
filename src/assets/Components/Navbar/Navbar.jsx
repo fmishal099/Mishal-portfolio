@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css';
-import { FaWhatsapp } from "react-icons/fa";
+import { CiLinkedin } from "react-icons/ci";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,9 +27,9 @@ const Navbar = () => {
 
       <div>
         <button className="navbar-btn">
-          <a href="#" className="navbar-link">
-            <FaWhatsapp className="whatsapp-icon" /> Whatsapp
-          </a>
+          <a href="" className="navbar-link">
+           <a href="https://www.linkedin.com/in/mishal-fatima-106930247" target="_blank"> <CiLinkedin className="linkedin-icon" /> Message Me
+          </a></a>
         </button>
       </div>
 

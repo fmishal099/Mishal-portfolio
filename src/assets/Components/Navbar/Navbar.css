@@ -35,11 +35,17 @@ body {
 }
 
 .navbar {
+    position: fixed;  /* Fixes the navbar to the top of the viewport */
+    top: 0;
+    left: 0;
+    width: 100%;  /* Make it stretch across the entire width */
+    background-color: #000000;  /* Adjust the background color as needed */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 30px;
-}
+    padding: 30px 130px;
+    z-index: 1000;  /* Ensures the navbar stays on top of other elements */
+  }
 
 .navbar-items ul {
     display: flex;
@@ -63,7 +69,7 @@ body {
     background-color: transparent;
     color: white;
     font-size: 16px;
-    text-transform: lowercase;
+    
     text-decoration: none;
     display: flex;
     gap: 5px;
@@ -73,7 +79,7 @@ body {
     line-height: 1.2;
 }
 
-.whatsapp-icon {
+.linkedin-icon {
     font-size: 18px;
 }
 
