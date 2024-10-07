@@ -23,6 +23,7 @@
 
 .Services {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     gap: 20px; /* Adds space between cards */
     margin-top: 40px;
@@ -33,7 +34,14 @@
 }
 
 .card h2 {
+    font-size: 25px;
+}
+.services-heading{
     font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
 }
 
 /* Responsive Styles */

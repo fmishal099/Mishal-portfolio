@@ -7,7 +7,6 @@ li{
     gap: 80px;
 
     align-items: center;
-    /* flex-wrap: wrap; */
     justify-content: center;
 }
 
@@ -18,12 +17,10 @@ li{
 
 .about-heading {
     display: flex;
-    justify-content: center;
-    font-size: 40px;
-    margin-bottom: 20px;
+    justify-content: left;
+    font-size: 35px;
     padding-top: 40px;
-   
-    font-size: 55px !important;
+    padding-bottom: 20px;
     text-align: center;
 }
 
@@ -37,8 +34,8 @@ li{
 }
 
 .about-content p {
-    font-size: 18px;
-    line-height: 1.6;
+    font-size: 16px;
+    line-height: 22px;
 }
 
 b {

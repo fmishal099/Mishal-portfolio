@@ -4,13 +4,14 @@ import photo from "../../images/photo.jpeg"
 
 const About = () => {
   return (
-    <div className='about-section'>
-      <h2 className='about-heading'>About me</h2>
+    <div className='about-section' id="about">
+      
       <div className="about">
         <div className="about-img">
           <img src={photo} alt="Profile" />
         </div>
         <div className="about-content">
+        <h2 className='about-heading'>About me</h2>
           <p>
             I am an experienced website Developer with over a decade of professional expertise in the field. I have a strong background in WordPress, Shopify, and custom web development. I've spent years perfecting my skills in HTML, CSS, Bootstrap, Tailwind CSS, JavaScript, and React.
             <br /><br />

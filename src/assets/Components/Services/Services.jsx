@@ -6,8 +6,8 @@ import seo from '../../images/seo.png'
 
 const Services = () => {
   return (
-    <div>
-      <h2 className="about-heading">My Services</h2>
+    <div id="services">
+      <h2 className="services-heading">My Skills</h2>
       <div className="Services">
         <div className="card">
           <img src={html} alt="" />

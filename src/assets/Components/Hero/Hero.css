@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 800px;
+  max-width: 700px;
   justify-content: center;
   margin: auto;
   /* height: 50vh; */
@@ -16,17 +16,17 @@
 
 
 .hero-h1 {
-  font-size: 48px;
+  font-size: 35px;
   font-weight: 600;
   line-height: 1.2;
 }
 
 .hero p {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   max-width: 700px;
   margin: 20px auto;
-  line-height: 1.6;
+  line-height: 22px;
 }
 
 .butoon {
@@ -45,13 +45,14 @@ button {
   border-radius: 50px;
   font-size: 16px;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.5s;
   width: auto;
 }
 
 button:hover {
-  transform: scale(1.02);
-  border: 2px solid white;
+  background: linear-gradient(267deg, #B923E1 .36%, #DA7C25 102.06%);
+  border: none;
+  transition: all 0.5s;
 }
 
 .linkedin-btn {

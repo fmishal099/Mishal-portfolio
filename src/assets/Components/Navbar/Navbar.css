@@ -1,6 +1,6 @@
-/* Basic Styles */
+
 * {
-    font-family: "Outfit", sans-serif;
+    
     padding: 0;
     margin: 0;
     color: white;
@@ -14,17 +14,26 @@ body {
 }
 
 .navbar-logo h2 {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .navbar ul li {
     list-style: none;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 600;
+    
+}
+.navbar ul li a:hover {
+    background: linear-gradient(267deg, #DA7C25 .36%, #B923E1 102.06%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* This is important for the gradient to show on text */
 }
 
 .navbar ul li a {
     text-decoration: none;
     color: white;
+    transition: all 0.5s;
 }
 
 .navbar {
@@ -39,24 +48,36 @@ body {
     gap: 40px;
 }
 
+
 .navbar-btn {
-    padding: 18px 30px;
+    padding: 12px 23px;
     border-radius: 80px;
     background: linear-gradient(267deg, #DA7C25 .36%, #B923E1 102.06%);
     border: none;
     outline: none;
+    transition: all 0.5s;
+    
+}
+.navbar-btn:hover{
+    background: linear-gradient(267deg, #B923E1 .36%, #DA7C25 102.06%);
+    border: none;
 }
 
 .navbar-btn a {
     background-color: transparent;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
+    text-transform: lowercase;
     text-decoration: none;
-    display: block;
+    display: flex;
+    gap: 5px;
     width: 100%;
     height: 100%;
     text-align: center;
     line-height: 1.2;
+}
+.whatsapp-icon{
+    font-size: 18px;
 }
 
 /* Hamburger Menu */

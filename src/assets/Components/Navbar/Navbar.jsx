@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css';
+import { FaWhatsapp } from "react-icons/fa";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,15 +16,19 @@ const Navbar = () => {
       </div>
       <div className={`navbar-items ${isOpen ? 'navbar-open' : ''}`}>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+  <li><a href="#about">About Me</a></li>
+  <li><a href="#services">Services</a></li>
+  <li><a href="#projects">Projects</a></li>
+  <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
       <div>
-        <button className='navbar-btn'><a href="#">Connect With Me</a></button>
+      <button className="navbar-btn">
+  <a href="#" className="navbar-link">
+    <FaWhatsapp className="whatsapp-icon" /> Whatsapp
+  </a>
+</button>
       </div>
       <div className="navbar-hamburger" onClick={toggleMenu}>
         {isOpen ? (

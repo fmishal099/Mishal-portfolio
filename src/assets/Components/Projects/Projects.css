@@ -1,5 +1,5 @@
 .projects h2{
-    padding-top: 80px;
+    padding-top: 50px;
 }
 .img{
     display: grid;
@@ -8,6 +8,9 @@
     justify-content: center;
     align-items: center;   
   
+}
+.project-heading{
+margin-bottom: 40px;
 }
 img {
     width:350px;
@@ -18,6 +21,39 @@ img:hover{
     transform: scale(1.05);
     transition: 0.4s;
 }
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .gallery-column {
+    float: left;
+    width: 33%;
+    padding: 15px;
+
+    
+  }
+  .gallery-column img {
+    /* border:3px solid;  */
+    /* border-image: linear-gradient(267deg, #DA7C25 .36%, #B923E1 102.06%) 1;  */
+    border-radius: 25px; 
+    padding: 10px;
+  }
+  
+  
+  
+  .gallery-row::after {
+    content: "";
+    clear: both;
+    display: table;
+ 
+  }
+  
+
+
+
+
 @media (max-width:768px) {
     .img{
         display: flex;
