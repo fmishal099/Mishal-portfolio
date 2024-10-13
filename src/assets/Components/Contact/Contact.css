@@ -79,7 +79,7 @@
     margin-bottom: 20px;
   }
   .contact-section {
-    min-height: 90vh; 
+    /* min-height: 90vh;  */
     overflow: hidden;
 }
 
