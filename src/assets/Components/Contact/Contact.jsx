@@ -17,7 +17,7 @@ const Contact = () => {
         </div>
         <div className="contact-item">
           <h3 className="contact-title">Location:</h3>
-          <span className="contact-text">Faisalabad, PK</span>
+          <a className="contact-text">Faisalabad, PK</a>
         </div>
         <div className="contact-item">
           <h3 className="contact-title">LinkedIn:</h3>

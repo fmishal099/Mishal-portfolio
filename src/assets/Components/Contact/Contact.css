@@ -78,15 +78,10 @@
   .contact-item {
     margin-bottom: 20px;
   }
+  .contact-section {
+    min-height: 110vh; 
+    overflow: hidden;
 }
 
-/* Media query for screens 480px and below */
-@media (max-width: 480px) {
-  .contact-item {
-    flex: 1 1 100%; /* 1 column on mobile */
-  }
 
-  .contact-section {
-    min-height: 100vh; /* Ensures content visibility on mobile */
-  }
 }
