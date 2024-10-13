@@ -15,10 +15,10 @@ const Contact = () => {
           <h3 className="contact-title">Phone:</h3>
           <a className="contact-link" href="tel:+923186582230">+92 3186582230</a>
         </div>
-        <div className="contact-item">
+        {/* <div className="contact-item">
           <h3 className="contact-title">Location:</h3>
           <a className="contact-text">Faisalabad, PK</a>
-        </div>
+        </div> */}
         <div className="contact-item">
           <h3 className="contact-title">LinkedIn:</h3>
           <a className="contact-link" href="https://www.linkedin.com/in/mishal-fatima-106930247/" target="_blank" rel="noopener noreferrer">
