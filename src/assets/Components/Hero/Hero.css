@@ -8,9 +8,10 @@
   /* height: 50vh; */
   text-align: center;
   gap: 40px;
-  margin-top: 190px;
-  margin-bottom: 20px;
+  margin-top: 160px;
+  /* margin-bottom: 20px; */
   padding: 0 20px;
+  height: 40vh;
 }
 
 
@@ -69,7 +70,7 @@ a{
 }
 @media (max-width: 768px) {
   .hero {
-    margin-top: 80px;
+    margin-top: 150px;
     /* height: 70vh; */
   }
 

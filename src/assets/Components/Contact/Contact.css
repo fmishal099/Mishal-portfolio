@@ -1,22 +1,19 @@
 /* Base styles */
-.contact {
+.contact-section {
   margin-bottom: 30px;
   padding: 0 20px;
-  height: auto; /* Automatically adjusts based on content */
-    overflow: visible;
 }
 
-.contact h2 {
+.contact-section h2 {
   margin: 50px 0;
 }
 
-.services-heading {
+.contact-heading {
   font-size: 2rem;
   text-align: center;
 }
 
-/* Flexbox for the contact info */
-.contact-info {
+.contact-details {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; /* Ensure even spacing on smaller screens */
@@ -26,20 +23,20 @@
 }
 
 /* Each column styling */
-.contact-column {
+.contact-item {
   flex: 1 1 calc(20% - 40px); /* 5 columns on desktop */
   min-width: 150px;
   margin-bottom: 20px;
   transition: transform 0.4s;
 }
 
-.contact-column p {
+.contact-item p {
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.contact-column a, .contact-column span {
+.contact-item a, .contact-item span {
   font-size: 1.3rem;
   background: linear-gradient(267deg, #DA7C25 .36%, #B923E1 102.06%);
   color: transparent;
@@ -49,54 +46,47 @@
   margin-top: 8px;
 }
 
-.contact-column a:hover {
+.contact-item a:hover {
   text-decoration: underline;
 }
 
-.contact-column:hover {
+.contact-item:hover {
   transform: scale(1.05);
 }
 
-/* Responsive layout for smaller screens */
-@media (max-width: 1200px) {
-  .contact-column {
-    flex: 1 1 calc(33.33% - 40px); /* 3 columns on medium screens */
-  }
-}
-
+/* Media query for screens 768px and below */
 @media (max-width: 768px) {
-  .contact-column {
-    flex: 1 1 calc(50% - 40px); /* 2 columns on smaller screens */
-  }
-  .contact{
-    height:900px !important; /* Automatically adjusts based on content */
-     overflow: visible;
-   }
-}
-
-@media (max-width: 480px) {
-  .contact-column {
-    flex: 1 1 100%; /* 1 column on mobile */
-  }
-.contact{
- height:850px !important; /* Automatically adjusts based on content */
-  overflow: visible;
-}
-  .services-heading {
-    font-size: 1.5rem;
+  .contact-item {
+    flex: 1 1 calc(50% - 40px); /* 2 columns per row */
   }
 
-  .contact-info {
+  .contact-section {
+    height: auto; /* Adjusts based on content */
+    overflow: visible;
+    padding-bottom: 40px; /* Ensure content isn't cut off at the bottom */
+  }
+
+  .contact-details {
     gap: 20px; /* Reduce gap on smaller screens */
-    padding: 10px; /* Ensure padding prevents content from being cut off */
+    padding: 10px; /* Prevent content cut-off */
   }
 
-  .contact-column {
+  .contact-heading {
+    font-size: 1.5rem; /* Smaller heading for mobile screens */
+  }
+
+  .contact-item {
     margin-bottom: 20px;
   }
+}
 
-  /* Ensure the container allows scrolling if content exceeds screen height */
-  .contact {
-    padding-bottom: 40px; /* Ensure content isn't cut off at the bottom */
+/* Media query for screens 480px and below */
+@media (max-width: 480px) {
+  .contact-item {
+    flex: 1 1 100%; /* 1 column on mobile */
+  }
+
+  .contact-section {
+    min-height: 100vh; /* Ensures content visibility on mobile */
   }
 }
