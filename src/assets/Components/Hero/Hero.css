@@ -75,9 +75,9 @@ a{
   }
   
 
-  .hero-h1 {
+  /* .hero-h1 {
     font-size: 25px !important;
-  }
+  } */
 
   body {
     padding-left: 30px;
@@ -85,7 +85,7 @@ a{
     background-color: black;
   }
 
-  .hero p {
+  .hero p, .hero-h1 {
     font-size: 16px;
     max-width: 1000px !important;
   }
